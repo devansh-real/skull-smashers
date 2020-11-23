@@ -16,7 +16,7 @@ client.on('message', message => {
     var msg = msg.concat(prefix,'ping');
     if (message.content.toLowerCase() === msg) {
 
-      client.message.send('pong');
+       message.reply('pong');
 
        }
     

@@ -13,7 +13,7 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-    var msg = prefix+ping;
+    var msg = prefix+'ping';
     if (message.content.toLowerCase() === msg) {
 
        message.reply('pong');

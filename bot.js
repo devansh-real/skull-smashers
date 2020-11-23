@@ -10,19 +10,10 @@ function memelnk(linkhere){
     memelink = linkhere;
 }
 //memes
-axios
-    .get(mainUrl)
-    .then((response) => {
-        dealWithData(response.data);
-    })
-    .catch((err) => {
-        console.log(err);
-    });
 const randNo = (limit) => {
     const thatNo = Math.floor(Math.random() * limit);
     return thatNo;
 };
-
 const dealWithData = (html) => {
     const $ = cheerio.load(html);
     const urlMeme = $("._2_tDEnGMLxpM6uOa2kaDB3.ImageBox-image.media-element._1XWObl-3b9tPy64oaG6fax");
@@ -31,6 +22,17 @@ const dealWithData = (html) => {
    var lol = (`Source is:${urlMeme[indexValue].attribs.src}`);
     memelnk(lol);
 };
+axios
+    .get(mainUrl)
+    .then((response) => {
+        dealWithData(response.data);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+
+
+
 
 //meme ends
 client.on('ready', () => {

@@ -9,7 +9,19 @@ client.on('ready', () => {
     console.log('I am ready!');
 
 });
+client.user.setPresence({
 
+        status: "online",  // You can show online, idle... Do not disturb is dnd
+
+        game: {
+
+            name: "Today is my birthday..... I was created by D.V.",  // The message shown
+
+            type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
+
+        }
+
+    });
  
 
 client.on('message', message => {

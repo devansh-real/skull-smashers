@@ -7,19 +7,10 @@ const client = new Discord.Client();
 client.on('ready', () => {
 
     console.log('I am ready!');
-    client.user.setPresence({
+    
+client.user.setActivity(“Today is my Birthday... I am Created by D.V.”, { type: “STREAMING” });
 
-        status: "online",  // You can show online, idle... Do not disturb is dnd
 
-        game: {
-
-            name: "!help",  // The message shown
-
-            type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
-
-        }
-
-    });
 
 });
 

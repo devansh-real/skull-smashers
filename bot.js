@@ -14,7 +14,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     var msg = prefix+'ping';
-    var ping = Date.now() - message.createdTimestamp + " ms";
+    var ping = Date.now() - message.createdTimestamp + "ms";
     if (message.content.toLowerCase() === msg) {
 
        message.channel.send('pong `'+ping+'`');

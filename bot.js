@@ -13,13 +13,27 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-    var msg = prefix+'ping';
+
+    var ping1 = prefix+'ping';
+
+    var about = prefix+'about';
+
     var ping = Date.now() - message.createdTimestamp + "ms";
-    if (message.content.toLowerCase() === msg) {
+
+    if (.content.toLowerCase() === ping1) {
 
        message.channel.send('pong `'+ping+'`');
 
        }
+
+       if (message.content.toLowerCase() === about) {
+
+       message.channel.send('Hello! I am created by D.V. 
+
+My birthday is on 23 Nov 2020');
+
+       }
+
     
 
 });
@@ -28,4 +42,4 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 
-client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Clie

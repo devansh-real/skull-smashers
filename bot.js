@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
- 
+var prefix = "ss ";
 
 client.on('ready', () => {
 
@@ -13,12 +13,13 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
+    var msg = msg.concat(prefix,'ping');
+    if (message.content.toLowerCase() === msg) {
 
-    if (message.content === 'ping') {
-
-       message.reply('pong');
+      client.message.send('pong');
 
        }
+    
 
 });
 

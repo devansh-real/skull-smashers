@@ -22,15 +22,14 @@ client.on('message', message => {
 
     if (.content.toLowerCase() === ping1) {
 
-       message.channel.send('pong `'+ping+'`');
+       message.channel.send('pong, `'+ping+'`');
 
        }
 
        if (message.content.toLowerCase() === about) {
 
-       message.channel.send('Hello! I am created by D.V. 
+       message.channel.send('Hello! I am created by D.V.\n My birthday is on 23 Nov 2020'); 
 
-My birthday is on 23 Nov 2020');
 
        }
 

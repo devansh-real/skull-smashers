@@ -41,11 +41,20 @@ client.on('message', message => {
                }else if(amount.includes('m')){
                    amount = amount.replace('m',' Million');
                }
-             //  const usermentions = heistmsg.remove(0).toString();
+             var usermentions = "";
                var hoster = "Hosted by: "+message.author;
                var aboutheist = "  ◇ Sponsor by: \n  ◇ Amount: "+amount+"\n   ◇ Requirements: 0\n    Go thank Donators in #general  ";
 	       message.channel.send(aboutheist);
-	       message.channel.send(message.mentions.toString()+'gg');
+	       message.mentions.forEach(myFunction);
+
+		function myFunction(item, index) {
+		  if (index = message.mentions.length-1){
+			  usermentions = usermentions+item+'and';
+		  }else{
+			  usermentions = usermentions+item;
+		  }
+		}
+	       message.channel.send(usermentions+'gg');
 	       message.channel.send(amount);
 	       message.channel.send(hoster);
 	

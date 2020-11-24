@@ -16,8 +16,6 @@ client.on('message', message => {
 
     var about = prefix+'about';
 
-    
-
     var createheist = prefix+'ch';
 
     var ping = Date.now() - message.createdTimestamp + "ms";
@@ -36,7 +34,7 @@ client.on('message', message => {
        }else if (message.content.toLowerCase().startsWith(createheist){
 
            var heistmsg = message.content.toLowerCase().substring(6).split(' ');
-           if(heistmsg.length >= 2){
+ //          if(heistmsg.length >= 2){
                var amount = heistmsg[0].toLowerCase();
                if (amount.includes('k')){
                   amount = amount.replace('k','K');
@@ -73,7 +71,7 @@ client.on('message', message => {
       text: hoster
     }
 }});
-           }
+ //          }
 
            
 

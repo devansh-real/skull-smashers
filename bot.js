@@ -33,7 +33,7 @@ client.on('message', message => {
 
        
 
-       }else if (message.content.toLowerCase()=== createheist){
+       }else if (message.content.toLowerCase().startsWith(createheist){
 
            var heistmsg = message.content.toLowerCase().substring(6).split(' ');
            if(heistmsg.length >= 2){

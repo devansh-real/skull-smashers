@@ -39,7 +39,7 @@ client.on('message', message => {
                   .addField("What you need to do:", "  ◇ Withdraw 1,000 coins in a Dank Memer channel \n   ◇ Turn Passive off, pls settings passive false\n    ◇ Type JOIN HEIST when this channel unlocks")
                   .setThumbnail("https://res.cloudinary.com/dnwwugp5s/image/upload/v1605163427/IMG_20201028_163006.jpg")
                   .setFooter("Footer", "https://media.tenor.com/images/7366ae69129776ba7660cd8e981460de/tenor.gif");
-           message.channel.send(embed);
+           message.channel.send('ok');
            
        }
 

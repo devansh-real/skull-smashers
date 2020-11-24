@@ -33,7 +33,7 @@ client.on('message', message => {
            const usermentions = heistmsg.remove(0).toString();
            message.delete();
            
-           message.channel.send("<@&773107906748612618>", { embed: {"fields":[{"name":"About Heist","value":"  ◇ Sponsor by: <@!771980491913297960> and <@!702598450725781584>\n  ◇ Amount: 250k\n   ◇ Requirements: 0\n    Go thank Donators in #general  \n"},{"name":"What you need to do:","value":"  ◇ Withdraw 1,000 coins in a Dank Memer channel \n   ◇ Turn Passive off, pls settings passive false\n    ◇ Type JOIN HEIST when this channel unlocks"}],"thumbnail":{"url":"https://res.cloudinary.com/dnwwugp5s/image/upload/v1605163427/IMG_20201028_163006.jpg"},"image":{"url":"https://media.tenor.com/images/7366ae69129776ba7660cd8e981460de/tenor.gif"},"author":{"name":"🔥 HEIST TIME 🔥","icon_url":"https://res.cloudinary.com/dnwwugp5s/image/upload/v1605163427/IMG_20201028_163006.jpg"},"color":1075177} });
+           message.channel.send("<@&773107906748612618>", "{ embed: {"fields":[{"name":"About Heist","value":"  ◇ Sponsor by: <@!771980491913297960> and <@!702598450725781584>\n  ◇ Amount: 250k\n   ◇ Requirements: 0\n    Go thank Donators in #general  \n"},{"name":"What you need to do:","value":"  ◇ Withdraw 1,000 coins in a Dank Memer channel \n   ◇ Turn Passive off, pls settings passive false\n    ◇ Type JOIN HEIST when this channel unlocks"}],"thumbnail":{"url":"https://res.cloudinary.com/dnwwugp5s/image/upload/v1605163427/IMG_20201028_163006.jpg"},"image":{"url":"https://media.tenor.com/images/7366ae69129776ba7660cd8e981460de/tenor.gif"},"author":{"name":"🔥 HEIST TIME 🔥","icon_url":"https://res.cloudinary.com/dnwwugp5s/image/upload/v1605163427/IMG_20201028_163006.jpg"},"color":1075177} }");
            
        }
 

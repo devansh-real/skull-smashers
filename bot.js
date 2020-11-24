@@ -28,7 +28,7 @@ client.on('message', message => {
        }else if (message.content.toLowerCase() === about) {
        message.channel.send('Hello! I am created by D.V.\nMy birthday is on 23 Nov 2020'); 
        
-       }else if (message.content.toLowerCase().startsWith(prefix+'ch')){
+       }else if (message.content.toLowerCase()===prefix+'ch'){
            var heistmsg = message.content.toLowerCase().substring(6).split(' ');
            const usermentions = heistmsg.remove(0).toString();
            message.delete();

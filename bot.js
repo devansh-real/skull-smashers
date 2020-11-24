@@ -42,12 +42,12 @@ client.on('message', message => {
                    amount = amount.replace('m',' Million');
                }
              //  const usermentions = heistmsg.remove(0).toString();
-              // var hoster = "Hosted by: "+message.author;
+               var hoster = "Hosted by: "+message.author;
                var aboutheist = "  ◇ Sponsor by: \n  ◇ Amount: "+amount+"\n   ◇ Requirements: 0\n    Go thank Donators in #general  ";
 	       message.channel.send(aboutheist);
 	       message.channel.send(message.mentions+'gg');
 	       message.channel.send(amount);
-	     //  message.channel.send(hoster);
+	       message.channel.send(hoster);
 	
 
        }

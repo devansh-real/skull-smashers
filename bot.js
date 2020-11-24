@@ -27,6 +27,7 @@ client.on('message', message => {
        message.channel.send('pong, `'+ping+'`');
 
        }else if (message.content.toLowerCase() === about) {
+       var hoster = "Hosted by: "+client.user.username;
 
        message.channel.send('Hello! I am created by D.V.\nMy birthday is on 23 Nov 2020'); 
  message.channel.send({embed: {

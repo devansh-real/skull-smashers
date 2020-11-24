@@ -31,7 +31,7 @@ client.on('message', message => {
 
        
 
-       }else if (message.content.toLowerCase().startsWith(createheist){
+       }else if (message.content.toLowerCase().startsWith(createheist)) {
 
             message.channel.send('Hello! I am created by D.V.\nMy birthday is on 23 Nov 2020'); 
 

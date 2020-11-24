@@ -29,6 +29,10 @@ client.on('message', message => {
        }else if (message.content.toLowerCase() === about) {
 
        message.channel.send('Hello! I am created by D.V.\nMy birthday is on 23 Nov 2020'); 
+           message.channel.send({embed: {
+  color: 3447003,
+  description: "HEllo"
+}});
 
        
 

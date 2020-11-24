@@ -45,21 +45,22 @@ client.on('message', message => {
                var hoster = "Hosted by: "+message.author;
                var aboutheist = "  ◇ Sponsor by: \n  ◇ Amount: "+amount+"\n   ◇ Requirements: 0\n    Go thank Donators in #general  ";
 	       message.channel.send(aboutheist);
-	       message.mentions.forEach(function(item, index){
+	       var index =0;
+	       for(index=0; index<message.mentions.length; ++index){
 
-	if (index = message.mentions.length-1){
+      if (index = message.mentions.length-1){
 
-			  usermentions = usermentions+item+'and';
+			  usermentions = usermentions+message.mentions[index]+'and';
 
 		  }else{
 
-			  usermentions = usermentions+item;
+			  usermentions = usermentions+message.mentions[index];
 
 		  }
 
-});
-
-
+}
+			  
+	
 		
 	       message.channel.send(usermentions+'gg');
 	       message.channel.send(amount);

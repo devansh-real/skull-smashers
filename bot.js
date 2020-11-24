@@ -32,7 +32,7 @@ client.on('message', message => {
            var heistmsg = message.content.toLowerCase().substring(6).split(' ');
            const usermentions = heistmsg.remove(0).toString();
            message.delete();
-           const embed = new Discord.RichEmbed()
+           const embed = new MessageEmbed()
                   .setAuthor("🔥 HEIST TIME 🔥", "https://res.cloudinary.com/dnwwugp5s/image/upload/v1605163427/IMG_20201028_163006.jpg")
                   .setColor(0x0d3dff)
                   .addField("About Heist:", "  ◇ Sponsor by: <@!771980491913297960> and <@!702598450725781584>\n  ◇ Amount: 250k\n   ◇ Requirements: 0\n    Go thank Donators in #general  ", true)

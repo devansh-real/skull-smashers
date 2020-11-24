@@ -45,7 +45,7 @@ client.on('message', message => {
                var hoster = "Hosted by: "+message.author;
                var aboutheist = "  ◇ Sponsor by: \n  ◇ Amount: "+amount+"\n   ◇ Requirements: 0\n    Go thank Donators in #general  ";
 	       message.channel.send(aboutheist);
-	       message.channel.send(message.mentions+'gg');
+	       message.channel.send(message.mentions.toString()+'gg');
 	       message.channel.send(amount);
 	       message.channel.send(hoster);
 	

@@ -33,7 +33,7 @@ client.on('message', message => {
  message.channel.send({embed: {
  color: 3447003,
     author: {
-      icon_url: "https://res.cloudinary.com/dnwwugp5s/image/upload/v1605163427/IMG_20201028_163006.jpg";
+      icon_url: "https://res.cloudinary.com/dnwwugp5s/image/upload/v1605163427/IMG_20201028_163006.jpg"
     },
     title: "🔥 HEIST TIME 🔥",
     description: "<@&773107906748612618>",

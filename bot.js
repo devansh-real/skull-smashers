@@ -35,18 +35,18 @@ client.on('message', message => {
 	       var heistmsg = message.content.toLowerCase().substring(6).split(' ');
 	       message.channel.send(typeof heistmsg);
 	       message.channel.send(heistmsg.length);
-	        var amount = heistmsg[0].toLowerCase();
+	        var amount = heistmsg[0];
                if (amount.includes('k')){
                   amount = amount.replace('k','K');
                }else if(amount.includes('m')){
                    amount = amount.replace('m',' Million');
                }
                const usermentions = heistmsg.remove(0).toString();
-               var hoster = "Hosted by: "+message.author;
+              // var hoster = "Hosted by: "+message.author;
                var aboutheist = "  ◇ Sponsor by: "+usermentions+"\n  ◇ Amount: "+amount+"\n   ◇ Requirements: 0\n    Go thank Donators in #general  ";
 	       message.channel.send(aboutheist);
 	       message.channel.send(amount);
-	       message.channel.send(hoster);
+	     //  message.channel.send(hoster);
 	       message.channel.send(usermentions);
 
        }

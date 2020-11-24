@@ -47,7 +47,7 @@ client.on('message', message => {
 	       message.channel.send(aboutheist);
 	       message.channel.send(amount);
 	     //  message.channel.send(hoster);
-	     //  message.channel.send(usermentions);
+	       message.channel.send(message.mentions);
 
        }
 

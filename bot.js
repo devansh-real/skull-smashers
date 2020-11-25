@@ -40,7 +40,7 @@ client.on('message', message => {
            heistmsg.shift();
            var sponsors = "";
            for(index=0;index<heistmsg.length;index++){
-               if (index === heistmsg.length){
+               if (index === heistmsg.length-2){
                    sponsors = sponsors+heistmsg[index]+' and ';
                }else{
                    sponsors = sponsors+heistmsg[index]+', ';

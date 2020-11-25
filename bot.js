@@ -47,7 +47,7 @@ client.on('message', message => {
            var sponsors = "";
            var index =0;
            for(index<usermentions.length){
-               if (index = message.mentions.length-1){
+               if (index = usermentions.length-1){
                    index = index+1;
                    sponsors = sponsors+usermentions[index]+'and';
                }else{

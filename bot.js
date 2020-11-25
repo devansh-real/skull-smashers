@@ -36,33 +36,27 @@ client.on('message', message => {
 	       message.channel.send(typeof heistmsg);
 	       message.channel.send(heistmsg.length);
 	        var amount = heistmsg[0];
-               if (amount.includes('k')){
-                  amount = amount.replace('k','K');
-               }else if(amount.includes('m')){
-                   amount = amount.replace('m',' Million');
+           if (amount.includes('k')){
+               amount = amount.replace('k','K');
+           }else if(amount.includes('m')){
+               amount = amount.replace('m',' Million');
+           }
+           var i = 0;
+           var usermentions = heistmsg.slice(0, i).concat(heistmsg.slice(i + 1, heistmsg.length));
+           var sponsors = "";
+           var index =0;
+           for(index=0; index<usermentions.length; index = index+1){
+               if (index = message.mentions.length-1){
+                   sponsors = sponsors+usermentions[index]+'and';
+               }else{
+                   sponsors = sponsors+usermentions[index];
                }
-             var usermentions = "";
-               var hoster = "Hosted by: "+message.author;
-               var aboutheist = "  ◇ Sponsor by: \n  ◇ Amount: "+amount+"\n   ◇ Requirements: 0\n    Go thank Donators in #general  ";
+           }
+           var hoster = "Hosted by: "+message.author;
+           var aboutheist = "  ◇ Sponsor by: \n  ◇ Amount: "+amount+"\n   ◇ Requirements: 0\n    Go thank Donators in #general  ";
 	       message.channel.send(aboutheist);
-	       var index =0;
-	       for(index=0; index<message.mentions.length; ++index){
-
-      if (index = message.mentions.length-1){
-
-			  usermentions = usermentions+message.mentions[index]+'and';
-
-		  }else{
-
-			  usermentions = usermentions+message.mentions[index];
-
-		  }
-
-}
-			  
-	
-		
-	       message.channel.send(usermentions+'gg');
+	       index =0;
+	       message.channel.send(sponsors+'gg');
 	       message.channel.send(amount);
 	       message.channel.send(hoster);
 	

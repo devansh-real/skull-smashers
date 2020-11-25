@@ -25,13 +25,9 @@ client.on('message', message => {
        message.channel.send('pong, `'+ping+'`');
 
        }else if (message.content.toLowerCase() === about) {
-
        message.channel.send('Hello! I am created by D.V.\nMy birthday is on 23 Nov 2020'); 
-
-
-       
-
        }else if (message.content.toLowerCase().startsWith(createheist)) {
+           
 	       var heistmsg = message.content.toLowerCase().substring(6).split(' ');
 	       message.channel.send(typeof heistmsg);
 	       message.channel.send(heistmsg.length);
@@ -41,18 +37,17 @@ client.on('message', message => {
            }else if(amount.includes('m')){
                amount = amount.replace('m',' Million');
            }
-           var i = 0;
-	   heistmsg.shift();
-           var usermentions = heistmsg;
+           heistmsg.shift();
+ //          var usermentions = heistmsg;
            var sponsors = "";
            var index =0;
-           for(index<usermentions.length){
-               if (index = usermentions.length-1){
+           for(index<heistmsg.length){
+               if (index == heistmsg.length-1){
                    index = index+1;
-                   sponsors = sponsors+usermentions[index]+'and';
+                   sponsors = sponsors+heistmsg[index]+'and';
                }else{
                    index = index+1;
-                   sponsors = sponsors+usermentions[index];
+                   sponsors = sponsors+heistmsg[index];
                }
            }
            var hoster = "Hosted by: "+message.author;

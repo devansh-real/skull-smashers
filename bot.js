@@ -42,7 +42,8 @@ client.on('message', message => {
                amount = amount.replace('m',' Million');
            }
            var i = 0;
-           var usermentions = heistmsg.slice(0, i).concat(heistmsg.slice(i + 1, heistmsg.length));
+	   heistmsg.shift();
+           var usermentions = heistmsg;
            var sponsors = "";
            var index =0;
            for(index<usermentions.length){

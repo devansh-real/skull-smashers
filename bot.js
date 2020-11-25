@@ -27,10 +27,10 @@ client.on('message', message => {
        }else if (message.content.toLowerCase() === about) {
        message.channel.send('Hello! I am created by D.V.\nMy birthday is on 23 Nov 2020'); 
        }else if(message.content.toLowerCase().startsWith('pls heist')){
-           message.channel.send('You stole BASICALLY EVERYTHING LMFAO 🤑Your payout was 9999999');
+           message.channel.send('You stole BASICALLY EVERYTHING LMFAO! 🤑Your payout was 9999999');
                       message.channel.send('LOL dream OP!');
        }else if(message.content.toLowerCase().startsWith('pls rob')){
-           message.channel.send(message.author+', Hey you Oversmart Robbing is disabled here and I am watching you');
+           message.channel.send(message.author+', Hey you Oversmart, Robbing is disabled here and I am watching you 😑😑');
        }else if (message.content.toLowerCase().startsWith(createheist)) {
            
 	       var heistmsg = message.content.toLowerCase().substring(6).split(' ');

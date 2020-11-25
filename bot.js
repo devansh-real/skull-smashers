@@ -46,7 +46,7 @@ client.on('message', message => {
                    sponsors = sponsors+heistmsg[index]+', ';
                }
            }
-           var hoster = "Hosted by: "+message.author;
+           var hoster = "Hosted by: "+message.author.username;
 	   message.delete();
            var aboutheist = "  ◇ Sponsor by: "+sponsors+"\n  ◇ Amount: "+amount+"\n   ◇ Requirements: 0\n    Go thank Donators in #general  ";
            message.channel.send({embed: {

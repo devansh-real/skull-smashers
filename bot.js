@@ -45,10 +45,12 @@ client.on('message', message => {
            var usermentions = heistmsg.slice(0, i).concat(heistmsg.slice(i + 1, heistmsg.length));
            var sponsors = "";
            var index =0;
-           for(index=0; index<usermentions.length; index = index+1){
+           for(index<usermentions.length){
                if (index = message.mentions.length-1){
+                   index = index+1;
                    sponsors = sponsors+usermentions[index]+'and';
                }else{
+                   index = index+1;
                    sponsors = sponsors+usermentions[index];
                }
            }

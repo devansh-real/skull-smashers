@@ -42,7 +42,9 @@ client.on('message', message => {
            for(index=0;index<heistmsg.length;index++){
                if (index === heistmsg.length-2){
                    sponsors = sponsors+heistmsg[index]+' and ';
-               }else{
+               }else if(index === heistmsg.length-1){
+                   sponsors = sponsors+heistmsg[index];
+                        }else{
                    sponsors = sponsors+heistmsg[index]+', ';
                }
            }

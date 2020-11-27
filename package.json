@@ -4,12 +4,10 @@
 
   "description": "A bot to help in Server .. Created by D.V. :)",
 
-  "version": "1.0.0",
+  "version": "0.0.0",
 
   "main": "bot.js",
-  "engines": {
-      "node": "12.x"
-  },
+
   "scripts": {
 
     "start": "node bot.js"

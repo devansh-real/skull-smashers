@@ -4,7 +4,7 @@
 
   "description": "A bot to help in Server .. Created by D.V. :)",
 
-  "version": "0.0.0",
+  "version": "1.0.0",
 
   "main": "bot.js",
 
@@ -15,10 +15,10 @@
   },
 
   "dependencies": {
+
     "discord.js": "11.1.0",
-    "request": "2.81.0",
-    "fs": "0.0.1-security",
-    "got": "^11.6.0"
+
+    "request": "2.81.0"
 
   }
 

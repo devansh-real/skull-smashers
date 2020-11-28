@@ -24,9 +24,8 @@ client.on('message', message => {
 	console.log(message.author+' says:- '+message.content.toLowerCase());
     if (!message.content.startsWith(prefix)) return;
 
-    if (message.content.toLowerCase() === prefix + 'ping') {
-        var pingpong = Date.now() - message.createdTimestamp + "ms";
-        message.channel.send('pong, `' + pingpong + '`');
+    if (message.content.toLowerCase() === 'dv') {
+	     message.channel.send('<a:_d_:760461628944154644> <a:_v_:760463602536022057>');
     } else if (message.content.toLowerCase() === prefix + 'about') {
         message.channel.send('Hello! I am created by D.V.\nMy birthday is on 23 Nov 2020');
     } else if (message.content.toLowerCase().startsWith('pls heist') || message.content.toLowerCase().startsWith('pls bankrob')) {

@@ -22,6 +22,9 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.author.bot) return;
 	console.log(message.author+' said:- '+message.content.toLowerCase());
+	const someEmoji = client.emojis.get("783194942323163136");
+
+      message.channel.send(someEmoji);
 	message.channel.send('<a:_v_:783194942323163136>');
 message.channel.send(someEmoji);
 message.channel.send(someEmoji2);

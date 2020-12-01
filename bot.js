@@ -22,9 +22,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.author.bot) return;
 	console.log(message.author+' said:- '+message.content.toLowerCase());
-	message.channel.send('<a:_d_:760461628944154644> <a:_v_:760463602536022057>');
-	const someEmoji = client.emojis.get("760461628944154644");
-	const someEmoji2 = client.emojis.get("783194942323163136");
+	message.channel.send('<a:_v_:783194942323163136>');
 message.channel.send(someEmoji);
 message.channel.send(someEmoji2);
     if (message.content.toLowerCase() === 'dv') {

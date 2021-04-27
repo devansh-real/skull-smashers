@@ -28,5 +28,14 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "meme",
-    aliases: []
+    aliases: ['meme'],
+    isEnabled: true,
+    description: '',
+    requiredPerms: ['SEND_MESSAGE'],
+    exampleUssage: '',
+    optionalArgs: '',
+    cooldown: 0,
+    syntax: '',
+    category: '<a:notSoFunny:834681596799221790> Fun <a:notSoFunny:834681596799221790>',
+    guildOnly: true
 }

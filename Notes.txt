@@ -1,0 +1,307 @@
+process.env.BOT_TOKEN
+
+ODE4NzA5NDk1NTc5NTQxNTg0.YEcAog.Mf6EMD44_qZrPaSxdd526J7DFAw
+
+https://discordapp.com/api/oauth2/authorize?client_id=818709495579541584&scope=bot
+
+DB password:- spambot346781463@DV
+
+DB user:- id16334570_dankmemerhelper
+
+DB name:- id16334570_dankmemerhelper
+DB Host:- local
+
+CREATE TABLE servers (
+    Serial_number INT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    guild_id VARCHAR(50) NOT NULL,
+    moderator_role_id VARCHAR(50) NULL,
+    giveaway_role_id VARCHAR(50) NULL,
+    giveaway_ping_role_id VARCHAR(50)NULL,
+    heist_role_id VARCHAR(50)NULL,
+    heist_ping_role_id VARCHAR(50)NULL,
+    event_role_id VARCHAR(50) NULL,
+    event_ping_role_id VARCHAR(50) NULL,
+    auction_role_id VARCHAR(50) NULL,
+    auction_ping_role_id VARCHAR(50) NULL
+);
+
+https://sjshsvsgsh.000webhostapp.com/db_barrier.php?key=23ert@#$%fghj&query=123
+
+if(error.response.body.includes("Wrong SQL: SELECT guild_id FROM servers WHERE guild_id=")){
+                    query = `INSERT INTO \`servers\`(\`guild_id\`, \`moderator_role_id\`, \`giveaway_role_id\`, \`giveaway_ping_role_id\`, \`heist_role_id\`, \`heist_ping_role_id\`, \`event_role_id\`, \`event_ping_role_id\`, \`auction_role_id\`, \`auction_ping_role_id\`) VALUES (\'${guild_info[0]}\', \'${guild_info[1]}\', \'${guild_info[2]}\', \'${guild_info[3]}\', \'${guild_info[4]}\', \'${guild_info[5]}\', \'${guild_info[6]}\', \'${guild_info[7]}\', \'${guild_info[8]}\', \'${guild_info[9]}\')`;
+                    insert();
+                }else{
+                    message.channel.send('Looks like our server is unreachable.');
+                    console.log(error.response.body);
+                    return true;
+                }
+
+
+
+{embed: {
+        color: embed_color[Math.floor(Math.random() * embed_color.length)],
+        title: `${party_emoji} NEW GIVEAWAY! ${party_emoji}`,
+        author: {
+          name: price,
+        },
+        description: `React with ${reaction_emoji} to enter \n **Time:** ${time}`,
+        thumbnail: {
+            url: 'https://cdn.discordapp.com/attachments/827075304786100256/827427224621416498/tenor.gif',
+        },
+        fields: field,
+        image: {
+            url: 'https://media.tenor.com/images/7366ae69129776ba7660cd8e981460de/tenor.gif',
+        },
+        footer: {
+          text: `${winners} winners`
+        }
+      }
+    }
+
+
+{embed: {
+        color: embed_color[Math.floor(Math.random() * embed_color.length)],
+        title: `${party_emoji} GIVEAWAY ENDED! ${party_emoji}`,
+        author: {
+          name: price,
+        },
+        description: `The giveaway for ended \n Winner: ${winners_user}`,
+        thumbnail: {
+            url: 'https://cdn.discordapp.com/attachments/827075304786100256/827427224621416498/tenor.gif',
+        },
+        fields: field,
+        image: {
+            url: 'https://media.tenor.com/images/7366ae69129776ba7660cd8e981460de/tenor.gif',
+        },
+        footer: {
+          text: `${winners} winners`
+        }
+      }
+    }
+    for(var [key, value] of Object.entries(all_alises)){
+                if(value.indexOf(cmd)> -1){
+                    command = key;
+                    break;
+                }else{
+                    command = false;
+                }
+            };
+            if(command){
+                const commandfile = client.commands.get(command);
+                commandfile.run(client, message, args);
+            }else{
+                const commandfile = client.commands.get(cmd);
+                commandfile.run(client, message, args, cmd);
+            }
+
+
+{
+  "blob": {
+    "price": "3b - 2b",
+    "image": "https://cdn.discordapp.com/emojis/639826478866890773.gif"
+  },
+  "Bolt Cutters": {
+    "price": "500mil - 550mil",
+    "image": ""
+  },
+  "Winning lottery ticket": {
+    "price": "150m - 200m",
+    "image": "https://cdn.discordapp.com/emojis/828630267983298580.png"
+  },
+  "Pepe trophy": {
+    "price": "42mil - 45mil",
+    "image": ""
+  },
+  "Reversal card": {
+    "price": "10mil - 12mil",
+    "image": ""
+  },
+  "Pepe Medal": {
+    "price": "7.5mil - 8.5mil",
+    "image": ""
+  },
+  "Pepe Coin": {
+    "price": "450k - 500k",
+    "image": ""
+  },
+  "Banknote": {
+    "price": "100k - 130k",
+    "image": ""
+  },
+  "Pizza slice": {
+    "price": "110k - 130k",
+    "image": ""
+  },
+  "Rare pepe": {
+    "price": "40k - 55k",
+    "image": ""
+  },
+  "Jacky O lantern": {
+    "price": "9mil - 12mil",
+    "image": ""
+  },
+  "Santa's Hat": {
+    "price": "140k - 200k",
+    "image": ""
+  },
+  "Cupid's Toe": {
+    "price": "70k - 90k",
+    "image": ""
+  },
+  "Fools notifs": {
+    "price": "60k - 80k",
+    "image": ""
+  },
+  "Snow": {
+    "price": "15k - 25k",
+    "image": ""
+  },
+  "Candy": {
+    "price": "20k - 40k",
+    "image": ""
+  },
+  "Chill Pill": {
+    "price": "20k- 15k",
+    "image": ""
+  },
+  "Fresh Bread": {
+    "price": "10k - 15k",
+    "image": ""
+  },
+  "Cookie": {
+    "price": "1k - 1.5k",
+    "image": ""
+  },
+  "God Box": {
+    "price": "14mil - 18mil",
+    "image": ""
+  },
+  "Dank Box": {
+    "price": "200k - 300k",
+    "image": ""
+  },
+  "Meme Box": {
+    "price": "150k - 200k",
+    "image": ""
+  },
+  "Gift Box": {
+    "price": "200k - 350k",
+    "image": ""
+  },
+  "Normie Box": {
+    "price": "50k - 70k",
+    "image": ""
+  },
+  "Dragon": {
+    "price": "100k - 110k",
+    "image": ""
+  },
+  "Boar": {
+    "price": "6k - 8k",
+    "image": ""
+  },
+  "Deer": {
+    "price": "15k - 25k",
+    "image": ""
+  },
+  "Duck": {
+    "price": "4k - 6k",
+    "image": ""
+  },
+  "Rabbit": {
+    "price": "6k - 8k",
+    "image": ""
+  },
+  "Skunk": {
+    "price": "6k - 8k",
+    "image": ""
+  },
+  "Legendary Fish": {
+    "price": "100k - 110k",
+    "image": ""
+  },
+  "Exotic Fish": {
+    "price": "90k - 110k",
+    "image": ""
+  },
+  "Rare Fish": {
+    "price": "8k - 14k",
+    "image": ""
+  },
+  "Common Fish": {
+    "price": "2k - 3k",
+    "image": ""
+  },
+  "Lucky Horseshoe": {
+    "price": "35k - 40k",
+    "image": ""
+  },
+  "Lifesaver": {
+    "price": " 15k - 20k",
+    "image": ""
+  },
+  "Robbers Wishlist": {
+    "price": "12k - 15k",
+    "image": ""
+  },
+  "Coin Bomb": {
+    "price": "10k - 15k",
+    "image": ""
+  },
+  "Tidepod": {
+    "price": "10k - 15k",
+    "image": ""
+  },
+  "Hunting Rifle": {
+    "price": "8k - 10k",
+    "image": ""
+  },
+  "Fishing Pole": {
+    "price": "8k - 10k",
+    "image": ""
+  },
+  "Shredded Cheese": {
+    "price": "4k - 6k",
+    "image": ""
+  },
+  "Alcohol": {
+    "price": "4k - 6k",
+    "image": ""
+  },
+  "Fidget Spinner": {
+    "price": "4k - 6k",
+    "image": ""
+  },
+  "Land mine": {
+    "price": "3.5k - 5k",
+    "image": ""
+  },
+  "Apple": {
+    "price": "1.5k",
+    "image": ""
+  },
+  "Box of Sand": {
+    "price": "1.5k",
+    "image": ""
+  },
+  "Laptop": {
+    "price": "900 - 1k",
+    "image": ""
+  },
+  "Pad lock": {
+    "price": "700-900",
+    "image": ""
+  },
+  "Cell phone": {
+    "price": "500-600",
+    "image": ""
+  },
+  "Fake id": {
+    "price": "500-600",
+    "image": "https://cdn.discordapp.com/emojis/573151946911776798.png"
+  },
+  "Pink Phallic Object": {
+    "price": "2 - 4",
+    "image": ""
+  }
+}
